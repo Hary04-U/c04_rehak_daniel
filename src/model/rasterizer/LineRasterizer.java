@@ -64,6 +64,9 @@ public class LineRasterizer {
     public void vykresliLineDDA(Line line, BufferedImage raster) {
         int rozdilX = line.getEndPoint().getX() - line.getStartPoint().getX();
         int rozdilY = line.getEndPoint().getY() - line.getStartPoint().getY();
+        if (rozdilX == 0 && rozdilY == 0) {
+            raster.setRGB(line.getStartPoint().getX(), line.getStartPoint().getY(), line.getBarva().getRGB());
+        }
         int x1 = line.getStartPoint().getX();
         int y1 = line.getStartPoint().getY();
         int x2 = line.getEndPoint().getX();

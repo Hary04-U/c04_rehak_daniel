@@ -4,7 +4,7 @@ import javax.swing.*;
 
 public class Window extends JFrame {
 
-    private Pane panel;
+    private final Pane panel;
 
     public Window(int width, int height) {
         setDefaultCloseOperation(EXIT_ON_CLOSE);
