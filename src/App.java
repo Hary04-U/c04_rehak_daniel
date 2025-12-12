@@ -1,9 +1,9 @@
-import controller.Controller2D;
+import controller.Controller3D;
 import view.Window;
 
 public class App {
     public static void main(String[] args) {
-        Window window = new Window(800, 600);
-        new Controller2D(window.getPanel());
+        Window window = new Window(1000, 800);
+        new Controller3D(window.getPanel());
     }
 }
